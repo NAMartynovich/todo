@@ -2,7 +2,7 @@ import React from 'react'
 
 const SearchPanel = () => {
   return (
-    <input placeholder='поиск' />
+    <input placeholder='поиск' className='search-input' />
   )
 }
 
