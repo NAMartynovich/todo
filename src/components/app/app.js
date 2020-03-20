@@ -12,11 +12,15 @@ const App = () => {
     { label: 'Пообедать', important: false, id: 3 },
   ]
   return (
-    <div className='container app' >
+    <div className='todo-app' >
       <AppHeader toDo={3} done={2} />
-      <SearchPanel />
-      <ItemStatusFilter />
-      <TodoList todos={todoData} />
+      <div classNsme='top-panel d-flex'>
+        <SearchPanel />
+        <ItemStatusFilter />
+      </div>
+      <TodoList
+        todos={todoData}
+        onDeleted={(id) => console.log({ id })} />
     </div>
   )
 }
