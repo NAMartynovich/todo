@@ -13,7 +13,7 @@ const App = () => {
   ]
   return (
     <div className='container app' >
-      <AppHeader />
+      <AppHeader toDo={3} done={2} />
       <SearchPanel />
       <ItemStatusFilter />
       <TodoList todos={todoData} />
