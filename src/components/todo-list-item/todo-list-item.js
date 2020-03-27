@@ -43,16 +43,18 @@ export default class TodoListItem extends Component {
           onClick={this.onLabelClick}>
           {label}
         </span>
-        <button type='button'
-          className='btn btn-outline-success btn-small'
-          onClick={onDeleted}>
-          <i className='fa fa-trash-o' />
-        </button>
-        <button type='button'
-          className='btn btn-outline-success btn-small'
-          onClick={this.onMarkImoprtant}>
-          <i className='fa fa-exclamation' />
-        </button>
+        <div className='btn-todo-list-item'>
+          <button type='button'
+            className='btn btn-outline-danger btn-small'
+            onClick={onDeleted}>
+            <i className='fa fa-trash-o' />
+          </button>
+          <button type='button'
+            className='btn btn-outline-success btn-small'
+            onClick={this.onMarkImoprtant}>
+            <i className='fa fa-exclamation' />
+          </button>
+        </div>
       </span >
     )
   }

@@ -22,3 +22,7 @@
   font-weight: bold;
   color: steelblue;
 }
+
+.btn-todo-list-item {
+  float: right;
+}
